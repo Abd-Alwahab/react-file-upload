@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.create-book-photo-picker {
+  width: 550px;
+  height: 350px;
+  /* border-radius: 50%; */
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+  position: relative;
+  z-index: 99;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.356);
+  margin-bottom: 0.5rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.create-book-photo-input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.create-book-photo-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.create-book-image-preview-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+}
+
+.create-book-image-preview-image-box {
+  width: 550px;
+  height: 350px;
+}
+
+.create-book-image-input-container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.create-book-image-preview-icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: tomato;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
