@@ -14,6 +14,11 @@ function App() {
         handleImageSelect={handleImageSelect}
         imageSrc={imageSrc}
         setImageSrc={setImageSrc}
+        style={{
+          width: 700,
+          height: 500,
+          background: "red",
+        }}
       />
     </div>
   );

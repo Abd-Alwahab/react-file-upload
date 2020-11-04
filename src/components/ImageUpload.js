@@ -1,9 +1,9 @@
 import React from "react";
 import { FaTrash, FaArrowCircleUp } from "react-icons/fa";
 
-function ImageUpload({ imageSrc, setImageSrc, handleImageSelect }) {
+function ImageUpload({ imageSrc, setImageSrc, handleImageSelect, style }) {
   return (
-    <div className="create-book-photo-picker">
+    <div className="create-book-photo-picker" style={style}>
       {imageSrc ? (
         <div className="create-book-image-preview-container">
           <div className="create-book-image-preview-icon-container">
@@ -20,6 +20,7 @@ function ImageUpload({ imageSrc, setImageSrc, handleImageSelect }) {
             <img
               src={imageSrc}
               alt="pick image"
+              className="image"
               style={{
                 width: "100%",
                 height: "100%",

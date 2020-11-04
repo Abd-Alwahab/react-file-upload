@@ -1,6 +1,4 @@
 .create-book-photo-picker {
-  width: 550px;
-  height: 350px;
   /* border-radius: 50%; */
   background-color: gold;
   display: flex;
@@ -11,6 +9,9 @@
   z-index: 99;
   box-shadow: 0 4px 3px rgba(0, 0, 0, 0.356);
   margin-bottom: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3rem;
 }
 
 .create-book-photo-input {
@@ -33,8 +34,14 @@
 }
 
 .create-book-image-preview-image-box {
-  width: 550px;
-  height: 350px;
+  /* width: 550px;
+  height: 350px; */
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  object-fit: fill;
 }
 
 .create-book-image-input-container {
